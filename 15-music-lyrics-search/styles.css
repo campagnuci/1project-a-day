@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.lyrics {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0;
+  height: 600px;
+  width: 60%;
+  overflow: auto;
+  text-align: center;
+  background-color: #2B6777;
+  color: #f2f2f2;
+  border-radius: 20px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.lyrics::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.lyrics {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form #search {
+  width: 100%;
+  display: block;
+  background-color: #52AB98;
+  border: none;
+  border-radius: 10px;
+  color: #F2F2F2;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form #search:focus {
+  outline: none;
+}
+
+.user-form #search::placeholder {
+  color: #F2F2F2;
+}
